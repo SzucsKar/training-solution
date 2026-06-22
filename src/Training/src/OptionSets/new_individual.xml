@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="new_individual" localizedName="Customer Type" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Customer Type" languagecode="1038" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1038" />
+  </Descriptions>
+  <options>
+    <option value="100000000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Individual" languagecode="1038" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1038" />
+      </Descriptions>
+    </option>
+    <option value="100000001" IsHidden="0">
+      <labels>
+        <label description="Company" languagecode="1038" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1038" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

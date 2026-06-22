@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{ffd493fd-59f0-4d03-b4f4-319e027ed708}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{3f219b29-35e3-4a5e-8f03-8b4c43ad65a2}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1038" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{637f1dca-15e6-45cf-860a-8ec03cf698e6}">
+                  <labels>
+                    <label description="ÁLTALÁNOS" languagecode="1038" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cecc6f32-9e7a-4ac8-847f-7d3b24fc746b}">
+                        <labels>
+                          <label description="Name" languagecode="1038" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{396a8c0d-5e8d-482b-8f5e-e24663b72492}">
+                        <labels>
+                          <label description="Tulajdonos" languagecode="1038" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Információ" languagecode="1038" />
+    </LocalizedNames>
+  </systemform>
+</forms>

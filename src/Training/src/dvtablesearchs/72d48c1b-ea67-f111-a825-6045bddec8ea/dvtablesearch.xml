@@ -1,0 +1,11 @@
+<dvtablesearch dvtablesearchid="72d48c1b-ea67-f111-a825-6045bddec8ea">
+  <appmoduleuniquename>new_CustomerApp</appmoduleuniquename>
+  <iscustomizable>1</iscustomizable>
+  <m365appmoduleid>
+    <uniquename>new_CustomerApp</uniquename>
+  </m365appmoduleid>
+  <name>M365_Primary_model_new_CustomerApp</name>
+  <searchtype>0</searchtype>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</dvtablesearch>

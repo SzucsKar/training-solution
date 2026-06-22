@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{91952a18-442d-488a-a3d5-072f09b5f7bc}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{fef82ee1-41af-4af5-8904-132e55a51d2e}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="1038" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{d7ebd278-ea7a-4b52-a0e4-515047b26904}">
+                  <labels>
+                    <label description="ColorStrip" languagecode="1038" />
+                  </labels>
+                </section>
+              </sections>
+            </column>
+            <column width="75%">
+              <sections>
+                <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{509378b8-aae8-46db-9eab-32f71f0d6076}" IsUserDefined="0">
+                  <labels>
+                    <label description="Fejléc" languagecode="1038" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d871f6b3-03e2-473f-a6bc-442e1445fac8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Állapot oka" languagecode="1038" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                      <cell id="{ed6cbcf1-c91c-4993-b446-a58bcfac30ab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1038" />
+                        </labels>
+                      </cell>
+                      <cell id="{0cc94cce-1707-45e9-a046-85c9e0ba2593}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1038" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{b7a937a6-3048-4d95-85ce-6f4f7e3d8239}" IsUserDefined="0">
+                  <labels>
+                    <label description="Részletek" languagecode="1038" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{716de3d2-b09e-4639-9898-9bdcf95d1eb6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1038" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{f8211fc6-dad2-421f-8364-1749ef540fd5}" IsUserDefined="0">
+                  <labels>
+                    <label description="Lábléc" languagecode="1038" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0debe8d1-d1a2-4c28-83b6-e89fdfdbd926}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tulajdonos" languagecode="1038" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{de7ece0b-580e-4365-82b0-e42e8d0ceab2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Létrehozás dátuma" languagecode="1038" />
+                        </labels>
+                        <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{2531e965-5a7d-4322-aaba-65f95263bc27}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1038" />
+                        </labels>
+                      </cell>
+                      <cell id="{3b725974-cdfb-4bd3-973c-3e5473f902ea}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="1038" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Információ" languagecode="1038" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Az adott entitáshoz tartozó kártyaűrlap." languagecode="1038" />
+    </Descriptions>
+  </systemform>
+</forms>

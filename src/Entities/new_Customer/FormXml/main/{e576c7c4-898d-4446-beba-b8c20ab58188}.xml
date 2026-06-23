@@ -22,7 +22,7 @@
                     <row>
                       <cell id="{01c95033-e475-481e-a364-b25640de7ee1}">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Name" languagecode="1038" />
                         </labels>
                         <control id="new_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_name" />
                       </cell>
@@ -30,7 +30,7 @@
                     <row>
                       <cell id="{00503775-e2e2-45e7-bd9e-2b61b7d84a3e}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Company Name" languagecode="1038" />
                         </labels>
                         <control id="new_companyname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_companyname" disabled="false" />
                       </cell>
@@ -38,7 +38,7 @@
                     <row>
                       <cell id="{27183c6d-91cf-4bad-9a24-e72c43aeeb12}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Email" languagecode="1038" />
                         </labels>
                         <control id="new_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="new_email" disabled="false" />
                       </cell>
@@ -46,7 +46,7 @@
                     <row>
                       <cell id="{8b38c4cd-c268-49ba-8e93-262c1278d605}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Customer Type" languagecode="1038" />
                         </labels>
                         <control id="new_customertype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="new_customertype" disabled="false" />
                       </cell>
@@ -54,7 +54,7 @@
                     <row>
                       <cell id="{08c955dd-0c86-4319-8c58-f821a9967845}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Order Count" languagecode="1038" />
                         </labels>
                         <control id="new_ordercount" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="new_ordercount" disabled="false" />
                       </cell>
@@ -62,7 +62,7 @@
                     <row>
                       <cell id="{df704284-e59d-4dc4-a9e7-9acd17377b9b}">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Tulajdonos" languagecode="1038" />
                         </labels>
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
@@ -70,17 +70,9 @@
                     <row>
                       <cell id="{e582af69-490e-4703-a668-974f9ddc9aca}" locklevel="0" colspan="1" rowspan="1">
                         <labels>
-                          <label description="" languagecode="1038" />
+                          <label description="Állapot" languagecode="1038" />
                         </labels>
                         <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
-                      </cell>
-                    </row>
-                    <row>
-                      <cell id="{b3c4d5e6-f7a8-49b9-c0d1-e2f3a4b5c6d7}" locklevel="0" colspan="1" rowspan="1">
-                        <labels>
-                          <label description="" languagecode="1038" />
-                        </labels>
-                        <control id="new_ispremium" classid="{67FAC785-CD58-4f71-B27B-368D23C43590}" datafieldname="new_ispremium" disabled="false" />
                       </cell>
                     </row>
                     <row>

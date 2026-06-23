@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Entity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Name LocalizedName="Customer" OriginalName="Customer">new_Customer</Name>
+  <Name LocalizedName="Order" OriginalName="Order">new_Order</Name>
   <EntityInfo>
-    <entity Name="new_Customer">
+    <entity Name="new_Order">
       <LocalizedNames>
-        <LocalizedName description="Customer" languagecode="1033" />
-        <LocalizedName description="Customer" languagecode="1038" />
+        <LocalizedName description="Order" languagecode="1033" />
+        <LocalizedName description="Order" languagecode="1038" />
       </LocalizedNames>
       <LocalizedCollectionNames>
-        <LocalizedCollectionName description="Customer" languagecode="1033" />
-        <LocalizedCollectionName description="Customer" languagecode="1038" />
+        <LocalizedCollectionName description="Order" languagecode="1033" />
+        <LocalizedCollectionName description="Order" languagecode="1038" />
       </LocalizedCollectionNames>
       <Descriptions>
         <Description description="" languagecode="1033" />
@@ -292,10 +292,10 @@
             <Description description="A rekordot módosító meghatalmazott felhasználó egyedi azonosítója." languagecode="1038" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="new_CompanyName">
-          <Type>nvarchar</Type>
-          <Name>new_companyname</Name>
-          <LogicalName>new_companyname</LogicalName>
+        <attribute PhysicalName="new_Customer">
+          <Type>lookup</Type>
+          <Name>new_customer</Name>
+          <LogicalName>new_customer</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -303,85 +303,7 @@
           <ValidForReadApi>1</ValidForReadApi>
           <ValidForCreateApi>1</ValidForCreateApi>
           <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>text</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Company Name" languagecode="1038" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1038" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="new_CustomerId">
-          <Type>primarykey</Type>
-          <Name>new_customerid</Name>
-          <LogicalName>new_customerid</LogicalName>
-          <RequiredLevel>systemrequired</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>0</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>0</IsCustomField>
           <IsAuditEnabled>0</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>1</IsFilterable>
-          <IsRetrievable>1</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <displaynames>
-            <displayname description="Customer" languagecode="1033" />
-            <displayname description="Customer" languagecode="1038" />
-          </displaynames>
-          <Descriptions>
-            <Description description="Entitáspéldányok egyedi azonosítója" languagecode="1038" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="new_CustomerType">
-          <Type>picklist</Type>
-          <Name>new_customertype</Name>
-          <LogicalName>new_customertype</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
           <IntroducedVersion>1.0.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
@@ -400,79 +322,10 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>-1</AppDefaultValue>
-          <optionset Name="new_customer_new_customertype">
-            <OptionSetType>picklist</OptionSetType>
-            <IntroducedVersion>1.0.0.0</IntroducedVersion>
-            <IsCustomizable>1</IsCustomizable>
-            <ExternalTypeName></ExternalTypeName>
-            <displaynames>
-              <displayname description="Customer Type" languagecode="1038" />
-            </displaynames>
-            <Descriptions>
-              <Description description="" languagecode="1038" />
-            </Descriptions>
-            <options>
-              <option value="100000000" ExternalValue="" IsHidden="0">
-                <labels>
-                  <label description="Individual" languagecode="1038" />
-                </labels>
-                <Descriptions>
-                  <Description description="" languagecode="1038" />
-                </Descriptions>
-              </option>
-              <option value="100000001" ExternalValue="" IsHidden="0">
-                <labels>
-                  <label description="Company" languagecode="1038" />
-                </labels>
-                <Descriptions>
-                  <Description description="" languagecode="1038" />
-                </Descriptions>
-              </option>
-            </options>
-          </optionset>
+          <LookupStyle>single</LookupStyle>
+          <LookupTypes />
           <displaynames>
-            <displayname description="Customer Type" languagecode="1038" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1038" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="new_Email">
-          <Type>nvarchar</Type>
-          <Name>new_email</Name>
-          <LogicalName>new_email</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>email</Format>
-          <MaxLength>100</MaxLength>
-          <Length>200</Length>
-          <displaynames>
-            <displayname description="Email" languagecode="1038" />
+            <displayname description="Customer" languagecode="1038" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1038" />
@@ -520,50 +373,10 @@
             <Description description="" languagecode="1038" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="new_OrderCount">
-          <Type>int</Type>
-          <Name>new_ordercount</Name>
-          <LogicalName>new_ordercount</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>disabled</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <Format>none</Format>
-          <MinValue>-2147483648</MinValue>
-          <MaxValue>2147483647</MaxValue>
-          <displaynames>
-            <displayname description="Order Count" languagecode="1038" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1038" />
-          </Descriptions>
-        </attribute>
-        <attribute PhysicalName="new_VIP">
-          <Type>bit</Type>
-          <Name>new_vip</Name>
-          <LogicalName>new_vip</LogicalName>
+        <attribute PhysicalName="new_OrderCategory">
+          <Type>picklist</Type>
+          <Name>new_ordercategory</Name>
+          <LogicalName>new_ordercategory</LogicalName>
           <RequiredLevel>none</RequiredLevel>
           <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
           <ImeMode>auto</ImeMode>
@@ -573,7 +386,7 @@
           <IsCustomField>1</IsCustomField>
           <IsAuditEnabled>1</IsAuditEnabled>
           <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0.0.1</IntroducedVersion>
+          <IntroducedVersion>1.0.0.0</IntroducedVersion>
           <IsCustomizable>1</IsCustomizable>
           <IsRenameable>1</IsRenameable>
           <CanModifySearchSettings>1</CanModifySearchSettings>
@@ -590,36 +403,80 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <AppDefaultValue>0</AppDefaultValue>
-          <optionset Name="new_customer_new_vip">
-            <OptionSetType>bit</OptionSetType>
-            <IntroducedVersion>1.0.0.1</IntroducedVersion>
+          <AppDefaultValue>-1</AppDefaultValue>
+          <optionset Name="new_order_new_ordercategory">
+            <OptionSetType>picklist</OptionSetType>
+            <IntroducedVersion>1.0.0.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
             <ExternalTypeName></ExternalTypeName>
             <displaynames>
-              <displayname description="VIP" languagecode="1038" />
+              <displayname description="Order Category" languagecode="1038" />
             </displaynames>
             <Descriptions>
               <Description description="" languagecode="1038" />
             </Descriptions>
             <options>
-              <option value="1" ExternalValue="" IsHidden="0">
+              <option value="100000000" ExternalValue="" IsHidden="0">
                 <labels>
-                  <label description="Yes" languagecode="1038" />
+                  <label description="Standard" languagecode="1038" />
                 </labels>
+                <Descriptions>
+                  <Description description="" languagecode="1038" />
+                </Descriptions>
               </option>
-              <option value="0" ExternalValue="" IsHidden="0">
+              <option value="100000001" ExternalValue="" IsHidden="0">
                 <labels>
-                  <label description="No" languagecode="1038" />
+                  <label description="Business" languagecode="1038" />
                 </labels>
+                <Descriptions>
+                  <Description description="" languagecode="1038" />
+                </Descriptions>
               </option>
             </options>
           </optionset>
           <displaynames>
-            <displayname description="VIP" languagecode="1038" />
+            <displayname description="Order Category" languagecode="1038" />
           </displaynames>
           <Descriptions>
             <Description description="" languagecode="1038" />
+          </Descriptions>
+        </attribute>
+        <attribute PhysicalName="new_OrderId">
+          <Type>primarykey</Type>
+          <Name>new_orderid</Name>
+          <LogicalName>new_orderid</LogicalName>
+          <RequiredLevel>systemrequired</RequiredLevel>
+          <DisplayMask>ValidForAdvancedFind|RequiredForGrid</DisplayMask>
+          <ImeMode>auto</ImeMode>
+          <ValidForUpdateApi>0</ValidForUpdateApi>
+          <ValidForReadApi>1</ValidForReadApi>
+          <ValidForCreateApi>1</ValidForCreateApi>
+          <IsCustomField>0</IsCustomField>
+          <IsAuditEnabled>0</IsAuditEnabled>
+          <IsSecured>0</IsSecured>
+          <IntroducedVersion>1.0</IntroducedVersion>
+          <IsCustomizable>1</IsCustomizable>
+          <IsRenameable>1</IsRenameable>
+          <CanModifySearchSettings>1</CanModifySearchSettings>
+          <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+          <SourceType>0</SourceType>
+          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+          <IsSortableEnabled>0</IsSortableEnabled>
+          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+          <IsDataSourceSecret>0</IsDataSourceSecret>
+          <AutoNumberFormat></AutoNumberFormat>
+          <IsSearchable>0</IsSearchable>
+          <IsFilterable>1</IsFilterable>
+          <IsRetrievable>1</IsRetrievable>
+          <IsLocalizable>0</IsLocalizable>
+          <displaynames>
+            <displayname description="Order" languagecode="1033" />
+            <displayname description="Order" languagecode="1038" />
+          </displaynames>
+          <Descriptions>
+            <Description description="Entitáspéldányok egyedi azonosítója" languagecode="1038" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="OverriddenCreatedOn">
@@ -851,7 +708,7 @@
           <IsFilterable>1</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="new_customer_statecode">
+          <optionset Name="new_order_statecode">
             <OptionSetType>state</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -859,7 +716,7 @@
               <displayname description="Állapot" languagecode="1038" />
             </displaynames>
             <Descriptions>
-              <Description description="Customer állapota" languagecode="1038" />
+              <Description description="Order állapota" languagecode="1038" />
             </Descriptions>
             <states>
               <state value="0" defaultstatus="1" invariantname="Active" IsHidden="0">
@@ -878,7 +735,7 @@
             <displayname description="Állapot" languagecode="1038" />
           </displaynames>
           <Descriptions>
-            <Description description="Customer állapota" languagecode="1038" />
+            <Description description="Order állapota" languagecode="1038" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="statuscode">
@@ -911,7 +768,7 @@
           <IsFilterable>0</IsFilterable>
           <IsRetrievable>0</IsRetrievable>
           <IsLocalizable>0</IsLocalizable>
-          <optionset Name="new_customer_statuscode">
+          <optionset Name="new_order_statuscode">
             <OptionSetType>status</OptionSetType>
             <IntroducedVersion>1.0</IntroducedVersion>
             <IsCustomizable>1</IsCustomizable>
@@ -919,7 +776,7 @@
               <displayname description="Állapot oka" languagecode="1038" />
             </displaynames>
             <Descriptions>
-              <Description description="Customer állapotára vonatkozó ok" languagecode="1038" />
+              <Description description="Order állapotára vonatkozó ok" languagecode="1038" />
             </Descriptions>
             <statuses>
               <status value="1" state="0" IsHidden="0">
@@ -938,7 +795,7 @@
             <displayname description="Állapot oka" languagecode="1038" />
           </displaynames>
           <Descriptions>
-            <Description description="Customer állapotára vonatkozó ok" languagecode="1038" />
+            <Description description="Order állapotára vonatkozó ok" languagecode="1038" />
           </Descriptions>
         </attribute>
         <attribute PhysicalName="TimeZoneRuleVersionNumber">
@@ -1019,48 +876,8 @@
             <Description description="A rekord létrehozásakor használt időzóna kódja." languagecode="1038" />
           </Descriptions>
         </attribute>
-        <attribute PhysicalName="new_IsPremium">
-          <Type>boolean</Type>
-          <Name>new_ispremium</Name>
-          <LogicalName>new_ispremium</LogicalName>
-          <RequiredLevel>none</RequiredLevel>
-          <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
-          <ImeMode>auto</ImeMode>
-          <ValidForUpdateApi>1</ValidForUpdateApi>
-          <ValidForReadApi>1</ValidForReadApi>
-          <ValidForCreateApi>1</ValidForCreateApi>
-          <IsCustomField>1</IsCustomField>
-          <IsAuditEnabled>1</IsAuditEnabled>
-          <IsSecured>0</IsSecured>
-          <IntroducedVersion>1.0</IntroducedVersion>
-          <IsCustomizable>1</IsCustomizable>
-          <IsRenameable>1</IsRenameable>
-          <CanModifySearchSettings>1</CanModifySearchSettings>
-          <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
-          <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
-          <SourceType>0</SourceType>
-          <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
-          <IsSortableEnabled>0</IsSortableEnabled>
-          <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
-          <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
-          <IsDataSourceSecret>0</IsDataSourceSecret>
-          <AutoNumberFormat></AutoNumberFormat>
-          <IsSearchable>0</IsSearchable>
-          <IsFilterable>0</IsFilterable>
-          <IsRetrievable>0</IsRetrievable>
-          <IsLocalizable>0</IsLocalizable>
-          <DefaultValue>0</DefaultValue>
-          <displaynames>
-            <displayname description="Is Premium" languagecode="1033" />
-            <displayname description="Premium ügyfél" languagecode="1038" />
-          </displaynames>
-          <Descriptions>
-            <Description description="" languagecode="1033" />
-            <Description description="Jelzi, hogy az ügyfél prémium típusú-e" languagecode="1038" />
-          </Descriptions>
-        </attribute>
       </attributes>
-      <EntitySetName>new_customers</EntitySetName>
+      <EntitySetName>new_orders</EntitySetName>
       <IsDuplicateCheckSupported>1</IsDuplicateCheckSupported>
       <IsBusinessProcessEnabled>0</IsBusinessProcessEnabled>
       <IsRequiredOffline>0</IsRequiredOffline>
